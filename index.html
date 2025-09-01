@@ -42,8 +42,9 @@
           <p>
             I am a second year Master's student in Data Science at Harvard University, fully funded by the Norwegian top talent grant <a href="https://www.akerscholarship.no">Aker Scholarship</a>. 
             I am writing my Master's Thesis under <a href ="http://www.eecs.harvard.edu/htk/">Prof. H.T. Kung</a>, researching hardware accelerated deep learning using systolic arrays. 
-            <br>
+            <br><br>
             This summer I have been working in the <a href="https://mir.g.harvard.edu/">Materials Intelligence Research</a> lab at Harvard University under Prof. Boris Kozinsky on scaling equivariant geometric machine-learning models to large, heterogeneous materials datasets.
+            <br><br>
             Before Harvard, I completed a 5-year integrated M.Sc. in Computer Science and Operations Research at NTNU. I wrote my thesis under <a href="https://www.ntnu.edu/employees/henrik.andersson">Prof. Henrik Andersson</a>, where we developed a novel optimization method for the production planning problem of land-based salmon farming in collaboration with an industry partner.
             <br><br>
             <a href="https://www.linkedin.com/in/olav-førland-805538bb/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -67,82 +68,104 @@
 
       <div class="grid">
 
-        <!-- NequIP: Equivariant GNNs for Interatomic Potentials -->
-        <div class="element-item research" data-category="research">
-          <p>
-            <span class="pub-title">NequIP: E(3)-Equivariant GNNs for Interatomic Potentials</span><br>
-            <em>Approach:</em> Equivariant message passing that respects 3D rotations/translations for data-efficient force fields. 
-            <em>Findings:</em> State-of-the-art accuracy with orders-of-magnitude fewer samples; enables long MD trajectories. 
-            <em>Tech:</em> PyTorch, equivariant reps.<br>
-            <a href="https://arxiv.org/pdf/2101.03164" target="_blank">[pdf]</a>
-            <a href="https://github.com/mir-group/nequip" target="_blank">[code]</a>
-          </p>
+        <!-- NequIP -->
+        <div class="list-item publication" data-category="research">
+          <a href="https://arxiv.org/abs/2101.03164" class="thumbnail">
+            <img src="images/nequip.webp" alt="NequIP teaser" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/abs/2101.03164">NequIP: E(3)-Equivariant GNNs for Interatomic Potentials</a></h3>
+            <p>
+              Data-efficient equivariant GNNs for interatomic potentials; respects 3D symmetries to reach SOTA accuracy with
+              far less data—enabling long, accurate MD trajectories.<br>
+              <a href="https://arxiv.org/pdf/2101.03164.pdf" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              <a href="https://github.com/mir-group/nequip" target="_blank">Code</a>
+            </p>
+          </div>
         </div>
 
-        <!-- Systolic Arrays for Transformers: Hardware-Accelerated Attention -->
-        <div class="element-item research" data-category="research">
-          <p>
-            <span class="pub-title">Exact Attention on Systolic Arrays (Harvard Kung Lab)</span><br>
-            <em>Approach:</em> Maps QKᵀ/V ops to a PE grid with on-chip dataflow scheduling for bandwidth-efficient attention.
-            <em>Findings:</em> Demonstrated exact attention with high throughput on simulated hardware; favorable compute/memory balance.
-            <em>Tech:</em> Verilog, C++, hardware simulation & benchmarking.<br>
-            <!-- If you later publish a PDF, replace the # with your file path, e.g. /pdfs/systolic_attention.pdf -->
-            <a href="#" target="_blank">[pdf]</a>
-            <!-- If you open-source the RTL or kernels, drop the repo here -->
-            <a href="#" target="_blank">[code]</a>
-          </p>
+        <!-- Systolic Arrays (Harvard Kung Lab) -->
+        <div class="list-item publication" data-category="research">
+          <a href="#" class="thumbnail">
+            <img src="images/systolic-attention.png" alt="Systolic arrays attention diagram" />
+          </a>
+          <div class="project-description">
+            <h3><a href="#">Exact Attention on Systolic Arrays</a></h3>
+            <p>
+              Maps QKᵀ and value aggregation to a PE grid with on-chip dataflow scheduling for bandwidth-efficient,
+              exact attention. Evaluated via RTL/sim for high throughput and favorable compute/memory balance.<br>
+              <a href="#" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              <a href="#" target="_blank">Code</a>
+            </p>
+          </div>
         </div>
 
-        <!-- Master’s Thesis (Abstract only; code/pdf restricted/båndlagt) -->
-        <div class="element-item research" data-category="research">
-          <p>
-            <span class="pub-title">Dantzig–Wolfe & Branch-and-Price for Land-Based Salmon Farming (NTNU)</span><br>
-            <em>Approach:</em> MILP with Dantzig–Wolfe decomposition + column generation; custom Branch-and-Price for integrality.
-            <em>Findings:</em> Improved capacity utilization and harvest metrics in industry setting; scalable planning across facilities.
-            <em>Tech:</em> Python, Gurobi, large-scale optimization.<br>
-            <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3157119?show=full&locale-attribute=en" target="_blank">[abstract]</a>
-            <!-- Code and full PDF are restricted (båndlagt) -->
-          </p>
+        <!-- Master’s Thesis (NTNU) -->
+        <div class="list-item publication" data-category="research">
+          <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3157119?show=full&locale-attribute=en" class="thumbnail">
+            <img src="images/thesis.png" alt="Optimization in land-based salmon farming" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3157119?show=full&locale-attribute=en">
+              Dantzig-Wolfe & Branch-and-Price for Land-Based Salmon Farming
+            </a></h3>
+            <p>
+              MILP with Dantzig-Wolfe decomposition + column generation; custom Branch-and-Price for integrality. Industry-backed
+              improvements in capacity utilization and harvest metrics across facilities.<br>
+              <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3157119?show=full&locale-attribute=en" target="_blank">Abstract</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              <a href="#" target="_blank">PDF (restricted)</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              <a href="#" target="_blank">Code (restricted)</a>
+            </p>
+          </div>
         </div>
 
         <!-- Equivariant GNN for TSP -->
-        <div class="element-item research" data-category="research">
-          <p>
-            <span class="pub-title">Equivariant GNN for the Traveling Salesman Problem</span><br>
-            <em>Approach:</em> Adapted E(3) ideas to E(2) equivariance for 2D TSP; symmetry-aware message passing.
-            <em>Findings:</em> Better data efficiency and reduced optimality gap; t-SNE shows clustering of geometrically equivalent tours.
-            <em>Tech:</em> PyTorch, geometric deep learning.<br>
-            <!-- If you have a report later, swap # for a PDF path -->
-            <a href="#" target="_blank">[pdf]</a>
-            <a href="https://github.com/olavforland/equivariant-gnn-for-tsp" target="_blank">[code]</a>
-          </p>
+        <div class="list-item publication" data-category="research">
+          <a href="https://github.com/olavforland/equivariant-gnn-for-tsp" class="thumbnail">
+            <img src="images/gnn-tsp.png" alt="Equivariant GNN for TSP" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://github.com/olavforland/equivariant-gnn-for-tsp">Equivariant GNN for the Traveling Salesman Problem</a></h3>
+            <p>
+              E(2)-equivariant message passing encodes planar symmetries for 2D TSP; improves data efficiency and reduces optimality gap.
+              t-SNE shows clustering of geometrically equivalent tours.<br>
+              <a href="#" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              <a href="https://github.com/olavforland/equivariant-gnn-for-tsp" target="_blank">Code</a>
+            </p>
+          </div>
         </div>
 
         <!-- Stochastic Route Planner -->
-        <div class="element-item research" data-category="research">
-          <p>
-            <span class="pub-title">Stochastic Route Planner under Travel-Time Uncertainty</span><br>
-            <em>Approach:</em> Probabilistic modeling of edge times + sampling-based optimization for robust routing.
-            <em>Findings:</em> Reduced expected delay in simulation across volatile conditions.
-            <em>Tech:</em> Python, SciPy, NetworkX, data pipelines.<br>
-            <a href="#" target="_blank">[pdf]</a>
-            <a href="https://github.com/benjaminrike1/stochastic_route_planner" target="_blank">[code]</a>
-          </p>
+        <div class="list-item publication" data-category="research">
+          <a href="https://github.com/benjaminrike1/stochastic_route_planner" class="thumbnail">
+            <img src="images/journeys.svg" alt="Stochastic route planner" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://github.com/benjaminrike1/stochastic_route_planner">Stochastic Route Planner under Travel-Time Uncertainty</a></h3>
+            <p>
+              Probabilistic edge-time models + sampling-based optimization for robust routing; reduces expected delay in volatile conditions.
+              Built data pipelines for fast scenario evaluation.<br>
+              <a href="#" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              <a href="https://github.com/benjaminrike1/stochastic_route_planner" target="_blank">Code</a>
+            </p>
+          </div>
         </div>
 
         <!-- Forward Gradient -->
-        <div class="element-item research" data-category="research">
-          <p>
-            <span class="pub-title">Forward-Mode Automatic Differentiation via Dual Numbers</span><br>
-            <em>Approach:</em> Custom forward-mode AD engine for efficient derivatives where reverse-mode is suboptimal.
-            <em>Findings:</em> Speedups on small models/low-batch regimes vs. reverse-mode.
-            <em>Tech:</em> Python, NumPy, autodiff internals.<br>
-            <a href="#" target="_blank">[pdf]</a>
-            <a href="https://github.com/benjaminrike1/forward_gradient" target="_blank">[code]</a>
-          </p>
+        <div class="list-item publication" data-category="research">
+          <a href="https://github.com/benjaminrike1/forward_gradient" class="thumbnail">
+            <img src="images/forward-gradient.png" alt="Forward-mode automatic differentiation" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://github.com/benjaminrike1/forward_gradient">Forward-Mode Automatic Differentiation via Dual Numbers</a></h3>
+            <p>
+              Custom forward-mode AD engine for cases where reverse-mode is sub-optimal; dual-number propagation integrated with NumPy.
+              Speedups on small models/low-batch regimes.<br>
+              <a href="#" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              <a href="https://github.com/benjaminrike1/forward_gradient" target="_blank">Code</a>
+            </p>
+          </div>
         </div>
-
-        <!-- ====== END PASTE ====== -->
 
       </div>
 

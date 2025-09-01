@@ -43,7 +43,7 @@
             I am a second year Master's student in Data Science at Harvard University, fully funded by the Norwegian top talent grant <a href="https://www.akerscholarship.no">Aker Scholarship</a>. 
             I am writing my Master's Thesis under <a href ="http://www.eecs.harvard.edu/htk/">Prof. H.T. Kung</a>, researching hardware accelerated deep learning using systolic arrays. 
             <br><br>
-            This summer I have been working in the <a href="https://mir.g.harvard.edu/">Materials Intelligence Research</a> lab at Harvard University under Prof. Boris Kozinsky on scaling equivariant geometric machine-learning models to large, heterogeneous materials datasets.
+            This summer I have been working on the NequIP Foundation Model project in the <a href="https://mir.g.harvard.edu/">Materials Intelligence Research</a> lab at Harvard University under <a href="https://mir.g.harvard.edu/people/boris-kozinsky">Prof. Boris Kozinsky</a> on scaling equivariant geometric machine-learning models to large, heterogeneous materials datasets.
             <br><br>
             Before Harvard, I completed a 5-year integrated M.Sc. in Computer Science and Operations Research at NTNU. I wrote my thesis under <a href="https://www.ntnu.edu/employees/henrik.andersson">Prof. Henrik Andersson</a>, where we developed a novel optimization method for the production planning problem of land-based salmon farming in collaboration with an industry partner.
             <br><br>
@@ -74,11 +74,10 @@
             <img src="images/nequip.webp" alt="NequIP teaser" />
           </a>
           <div class="project-description">
-            <h3><a href="https://arxiv.org/abs/2101.03164">NequIP: E(3)-Equivariant GNNs for Interatomic Potentials</a></h3>
+            <h3><a href="https://arxiv.org/abs/2101.03164">NequIP-FM: E(3)-Equivariant Foundation Model Graph Neural Networks for Interatomic Potentials</a></h3>
             <p>
-              Data-efficient equivariant GNNs for interatomic potentials; respects 3D symmetries to reach SOTA accuracy with
-              far less data—enabling long, accurate MD trajectories.<br>
-              <a href="https://arxiv.org/pdf/2101.03164.pdf" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              Worked on NequIP Foundation Models, a project scaling the NequIP equivariant neural network for interatomic potentials to large,
+              heterogeneous materials datasets. <br>
               <a href="https://github.com/mir-group/nequip" target="_blank">Code</a>
             </p>
           </div>
@@ -92,10 +91,10 @@
           <div class="project-description">
             <h3><a href="#">Exact Attention on Systolic Arrays</a></h3>
             <p>
-              Maps QKᵀ and value aggregation to a PE grid with on-chip dataflow scheduling for bandwidth-efficient,
-              exact attention. Evaluated via RTL/sim for high throughput and favorable compute/memory balance.<br>
-              <a href="#" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-              <a href="#" target="_blank">Code</a>
+              Designed a novel systolic array based hardware layout that allows for efficient attention computation in transformers for the course CS224: Computing at Scale.
+              Hardware implementation and benchmarking using Verilog and C++. I am continuing the work in my Master's thesis.<br>
+              <a href="pdfs/systolic-attention.pdf" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              <a href="https://github.com/olavforland/CS242-Systolic-Arrays-for-Efficient-Attention-Computation" target="_blank">Code</a>
             </p>
           </div>
         </div>
@@ -110,8 +109,9 @@
               Dantzig-Wolfe & Branch-and-Price for Land-Based Salmon Farming
             </a></h3>
             <p>
-              MILP with Dantzig-Wolfe decomposition + column generation; custom Branch-and-Price for integrality. Industry-backed
-              improvements in capacity utilization and harvest metrics across facilities.<br>
+              Researched and developed one of the first applications of a Dantzig-Wolfe decomposition and Branch & Price algorithm in land-based
+              salmon farming, improving capacity utilization (84%→91%), harvest weight (5.4→5.9 kg), and profits (up to +60%) for Salmon Evolution.<br>
+              The thesis is embargoed until May 2026.<br>
               <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3157119?show=full&locale-attribute=en" target="_blank">Abstract</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
               <a href="#" target="_blank">PDF (restricted)</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
               <a href="#" target="_blank">Code (restricted)</a>
@@ -125,11 +125,11 @@
             <img src="images/gnn-tsp.png" alt="Equivariant GNN for TSP" />
           </a>
           <div class="project-description">
-            <h3><a href="https://github.com/olavforland/equivariant-gnn-for-tsp">Equivariant GNN for the Traveling Salesman Problem</a></h3>
+            <h3><a href="https://github.com/olavforland/equivariant-gnn-for-tsp">E(2)-Equivariant Graph Neural Network improves Data Efficiency of Traveling Salesman Problem</a></h3>
             <p>
-              E(2)-equivariant message passing encodes planar symmetries for 2D TSP; improves data efficiency and reduces optimality gap.
-              t-SNE shows clustering of geometrically equivalent tours.<br>
-              <a href="#" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              Adapted the NequIP E(3)-equivariant architecture to a 2D E(2)-equivariant GNN for the Traveling Salesman Problem, improving data
+              efficiency and reducing optimality gap by up to 25%. Showed via t-SNE that the model clusters geometrically equivalent tours together.<br>
+              <a href="pdfs/gnn-tsp.pdf" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
               <a href="https://github.com/olavforland/equivariant-gnn-for-tsp" target="_blank">Code</a>
             </p>
           </div>
@@ -143,9 +143,8 @@
           <div class="project-description">
             <h3><a href="https://github.com/benjaminrike1/stochastic_route_planner">Stochastic Route Planner under Travel-Time Uncertainty</a></h3>
             <p>
-              Probabilistic edge-time models + sampling-based optimization for robust routing; reduces expected delay in volatile conditions.
-              Built data pipelines for fast scenario evaluation.<br>
-              <a href="#" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              Stochastic route planner of the bus network in Zürich for the class COM-490 Large-scale data science for real-world data at EPFL.
+              Developed probabilistic travel-time models with sampling-based A* optimization. Built scalable PySpark pipelines on top of Hadoop Distributed File System (HDFS) to evaluate routing scenarios under delay uncertainty.<br>
               <a href="https://github.com/benjaminrike1/stochastic_route_planner" target="_blank">Code</a>
             </p>
           </div>
@@ -159,9 +158,9 @@
           <div class="project-description">
             <h3><a href="https://github.com/benjaminrike1/forward_gradient">Forward-Mode Automatic Differentiation via Dual Numbers</a></h3>
             <p>
-              Custom forward-mode AD engine for cases where reverse-mode is sub-optimal; dual-number propagation integrated with NumPy.
-              Speedups on small models/low-batch regimes.<br>
-              <a href="#" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              Built forward-mode AD optimizers (ForwardSGD, ForwardAdam), using the experimental PyTorch spinoff functorch library, to test the forward gradient method from <a href="https://arxiv.org/abs/2202.08587">Baydin et al. (“Gradients without Backpropagation”)</a>.
+              Evaluated performance across MNIST and CIFAR-10 and discovered that forward gradients don't scale as well as backprop in realistic settings.<br>
+              <a href="pdfs/forward-gradients.pdf" target="_blank">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
               <a href="https://github.com/benjaminrike1/forward_gradient" target="_blank">Code</a>
             </p>
           </div>
